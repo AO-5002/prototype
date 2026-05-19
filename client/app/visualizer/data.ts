@@ -1,4 +1,4 @@
-interface FileNodes {
+interface FileNode {
   id: string;
   position: { x: number; y: number };
   data: { label: string };
@@ -8,8 +8,8 @@ const initialNodes = [
   {
     id: "n1",
     position: { x: 0, y: 0 },
+    type: "fileNodes",
     data: { label: "Node 1" },
-    type: "input",
   },
   {
     id: "n2",
@@ -28,4 +28,4 @@ const initialEdges = [
   },
 ];
 
-export { initialEdges, initialNodes };
+export { initialEdges, initialNodes, type FileNode };
