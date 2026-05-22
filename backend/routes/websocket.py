@@ -11,7 +11,15 @@ async def websocket_endpoint(websocket: WebSocket):
 
     await websocket.send_json({
         "type": "init",
-        "files": websocket.app.state.files
+        "nodes": [
+            {
+                "id": str(f),
+                "position": {"x": i * 100, "y": i * 25},
+                "data": {"label": f.name},
+            }
+            for i, f in enumerate(websocket.app.state.files)
+        ],
+        "edges": []
     })
 
     try:

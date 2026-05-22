@@ -1,7 +1,7 @@
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from backend.services.init_scan import scan_repo
+from services.init_scan import scan_repo
 from routes.index import router as routes
 
 
