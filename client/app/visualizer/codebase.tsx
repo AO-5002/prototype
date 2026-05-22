@@ -40,6 +40,7 @@ export function CodebaseVisualizer() {
             },
             {
               id: "n2",
+              type: "fileNodes",
               position: { x: 100, y: 100 },
               data: { label: "Node 2" },
             },
