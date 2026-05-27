@@ -10,4 +10,5 @@ dependencies = [
     "halo>=0.0.31",
     "inquirer>=3.4.1",
     "uvicorn[standard]>=0.47.0",
+    "watchdog>=6.0.0",
 ]
